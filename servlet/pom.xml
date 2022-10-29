@@ -2,14 +2,12 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>cloud.piranha.guides</groupId>
+    <groupId>cloud.piranha.guides.servlet</groupId>
     <artifactId>project</artifactId>
     <version>1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Piranha Guides - Project</name>
+    <name>Piranha Guides - Servlet - Project</name>
     <modules>
-        <module>coreprofile</module>
-        <module>servlet</module>
+        <module>helloworld</module>
     </modules>
 </project>
