@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<actions>
+    <action>
+        <actionName>debug</actionName>
+        <packagings>
+            <packaging>war</packaging>
+            <packaging>ear</packaging>
+            <packaging>ejb</packaging>
+        </packagings>
+        <goals>
+            <goal>package</goal>
+            <goal>pre-integration-test</goal>
+        </goals>
+        <properties>
+            <netbeans.deploy.debugmode>true</netbeans.deploy.debugmode>
+            <jpda.listen>true</jpda.listen>
+        </properties>
+        <activatedProfiles>
+            <activatedProfile>debug</activatedProfile>
+        </activatedProfiles>
+    </action>
+</actions>
