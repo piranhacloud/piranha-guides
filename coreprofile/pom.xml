@@ -10,6 +10,7 @@
     <name>Piranha Guides - CoreProfile - Project</name>
     <modules>
         <module>arquillian</module>
+        <module>json</module>
         <module>rest</module>
     </modules>
 </project>
