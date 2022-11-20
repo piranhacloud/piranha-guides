@@ -10,5 +10,6 @@
     <modules>
         <module>faces</module>
         <module>helloworld</module>
+        <module>websocket</module>
     </modules>
 </project>
