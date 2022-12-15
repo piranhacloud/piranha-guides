@@ -12,6 +12,7 @@
     <name>CRaC web application</name>
     <properties>
         <piranha.distribution>servlet</piranha.distribution>
+        <piranha.version>22.12.0</piranha.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <build>
@@ -20,7 +21,7 @@
             <plugin>
                 <groupId>cloud.piranha.maven.plugins</groupId>
                 <artifactId>piranha-maven-plugin</artifactId>
-                <version>22.12.0-SNAPSHOT</version>
+                <version>${piranha.version}</version>
                 <executions>
                     <execution>
                         <id>pre-integration-test</id>
@@ -88,7 +89,7 @@
         <dependency>
             <groupId>cloud.piranha.extension</groupId>
             <artifactId>piranha-extension-weld</artifactId>
-            <version>22.11.0</version>
+            <version>${piranha.version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
