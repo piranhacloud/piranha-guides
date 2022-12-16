@@ -12,6 +12,7 @@
     <name>HelloWorld web application</name>
     <properties>
         <piranha.distribution>server</piranha.distribution>
+        <piranha.version>22.12.0</piranha.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
@@ -40,7 +41,7 @@
             <plugin>
                 <groupId>cloud.piranha.maven.plugins</groupId>
                 <artifactId>piranha-maven-plugin</artifactId>
-                <version>22.11.0</version>
+                <version>${piranha.version}</version>
                 <executions>
                     <execution>
                         <id>pre-integration-test</id>
