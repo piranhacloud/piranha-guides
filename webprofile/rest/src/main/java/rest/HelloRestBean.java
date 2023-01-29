@@ -5,7 +5,7 @@ import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 
 @RequestScoped
-@Path("/hello")
+@Path("/hellorest")
 public class HelloRestBean {
 
     @GET

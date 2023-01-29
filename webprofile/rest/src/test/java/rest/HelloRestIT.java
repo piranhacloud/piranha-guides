@@ -14,7 +14,7 @@ class HelloRestIT {
     void testHelloWorld() throws Exception {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest
-                .newBuilder(new URI("http://localhost:8080/rest/hello"))
+                .newBuilder(new URI("http://localhost:8080/rest/hellorest"))
                 .build();
         HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
         assertTrue(response.body().contains("Hello REST!"));
