@@ -18,6 +18,10 @@
 	path = webprofile/faces
 	url = https://github.com/piranhacloud/piranha-webprofile-hellofaces-guide.git
 
+[submodule "servlet/websocket"]
+	path = servlet/websocket
+	url = https://github.com/piranhacloud/piranha-servlet-websocket-guide.git
+
 [submodule "webprofile/helloworld"]
 	path = webprofile/helloworld
 	url = https://github.com/piranhacloud/piranha-webprofile-helloworld-guide.git
