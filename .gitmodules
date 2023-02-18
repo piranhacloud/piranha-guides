@@ -1,3 +1,7 @@
+[submodule "server/helloworld"]
+	path = server/helloworld
+	url = https://github.com/piranhacloud/piranha-server-helloworld-guide.git
+
 [submodule "servlet/crac"]
 	path = servlet/crac
 	url = https://github.com/piranhacloud/piranha-servlet-crac-guide.git
