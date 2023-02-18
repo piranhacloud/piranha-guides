@@ -1,3 +1,27 @@
+[submodule "servlet/crac"]
+	path = servlet/crac
+	url = https://github.com/piranhacloud/piranha-servlet-crac-guide.git
+
+[submodule "servlet/helloworld"]
+	path = servlet/helloworld
+	url = https://github.com/piranhacloud/piranha-servlet-helloworld-guide.git
+
+[submodule "servlet/faces"]
+	path = servlet/faces
+	url = https://github.com/piranhacloud/piranha-servlet-hellofaces-guide.git
+
+[submodule "servlet/pages"]
+	path = servlet/pages
+	url = https://github.com/piranhacloud/piranha-servlet-hellopages-guide.git
+
 [submodule "webprofile/faces"]
 	path = webprofile/faces
 	url = https://github.com/piranhacloud/piranha-webprofile-hellofaces-guide.git
+
+[submodule "webprofile/helloworld"]
+	path = webprofile/helloworld
+	url = https://github.com/piranhacloud/piranha-webprofile-helloworld-guide.git
+
+[submodule "webprofile/rest"]
+	path = webprofile/rest
+	url = https://github.com/piranhacloud/piranha-webprofile-hellorest-guide.git
