@@ -9,5 +9,6 @@
     <name>Piranha Guides - Embedded - Project</name>
     <modules>
         <module>springboot</module>
+        <module>springboot-loom</module>
     </modules>
 </project>

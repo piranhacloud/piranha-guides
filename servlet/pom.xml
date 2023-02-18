@@ -8,10 +8,6 @@
     <packaging>pom</packaging>
     <name>Piranha Guides - Servlet - Project</name>
     <modules>
-        <module>crac</module>
-        <module>faces</module>
-        <module>helloworld</module>
-        <module>pages</module>
         <module>websocket</module>
     </modules>
 </project>

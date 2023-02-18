@@ -3,10 +3,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>cloud.piranha.guides.embedded</groupId>
-    <artifactId>springboot</artifactId>
+    <artifactId>springboot-loom</artifactId>
     <version>1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Running Piranha Embedded with Spring Boot</name>
+    <name>Running Piranha Embedded with Spring Boot using Virtual Threads</name>
     <properties>
         <piranha.version>23.1.0</piranha.version>
         <spring-boot.version>3.0.1</spring-boot.version>
@@ -41,6 +41,12 @@
             <version>${piranha.version}</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>cloud.piranha.http</groupId>
+            <artifactId>piranha-http-virtual</artifactId>
+            <version>${piranha.version}</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -49,7 +55,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.10.1</version>
                 <configuration>
-                    <release>17</release>
+                    <release>19</release>
+                    <enablePreview>true</enablePreview>
                 </configuration>
             </plugin>
             <plugin>
@@ -62,6 +69,11 @@
                         <goals>
                             <goal>repackage</goal>
                         </goals>
+                        <configuration>
+                            <jvmArguments>
+                                --enable-preview --add-modules=jdk.incubator.concurrent
+                            </jvmArguments>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

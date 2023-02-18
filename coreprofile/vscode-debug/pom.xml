@@ -45,7 +45,7 @@
             <plugin>
                 <groupId>cloud.piranha.maven.plugins</groupId>
                 <artifactId>piranha-maven-plugin</artifactId>
-                <version>22.10.0</version>
+                <version>23.1.0</version>
                 <executions>
                     <execution>
                         <id>pre-integration-test</id>
@@ -102,7 +102,7 @@
                     <plugin>
                         <groupId>cloud.piranha.maven.plugins</groupId>
                         <artifactId>piranha-maven-plugin</artifactId>
-                        <version>${piranha-maven-plugin.version}</version>
+                        <version>23.1.0</version>
                         <configuration>
                             <jvmArguments>-Xdebug -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=9009</jvmArguments>
                         </configuration>
