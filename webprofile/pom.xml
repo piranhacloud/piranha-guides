@@ -9,7 +9,7 @@
     <name>Piranha Guides - Web Profile - Project</name>
     <modules>
         <module>faces</module>
-        <module>helloworld</module>
-        <module>rest</module>
+        <!--<module>helloworld</module>-->
+        <!--<module>rest</module>-->
     </modules>
 </project>
