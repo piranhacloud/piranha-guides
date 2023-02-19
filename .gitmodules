@@ -1,5 +1,5 @@
 [submodule "embedded/jlink"]
-	path = server/helloworld
+	path = embedded/jlink
 	url = https://github.com/piranhacloud/piranha-embedded-jlink-guide.git
 
 [submodule "server/helloworld"]
