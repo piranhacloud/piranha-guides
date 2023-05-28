@@ -8,6 +8,7 @@
     <packaging>pom</packaging>
     <name>Piranha Guides - Embedded - Project</name>
     <modules>
+        <module>helloworld</module>
         <module>springboot</module>
         <module>springboot-loom</module>
     </modules>
