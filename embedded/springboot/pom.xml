@@ -8,8 +8,8 @@
     <packaging>jar</packaging>
     <name>Running Piranha Embedded with Spring Boot</name>
     <properties>
-        <piranha.version>23.1.0</piranha.version>
-        <spring-boot.version>3.0.1</spring-boot.version>
+        <piranha.version>23.5.0</piranha.version>
+        <spring-boot.version>3.1.0</spring-boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencyManagement>
