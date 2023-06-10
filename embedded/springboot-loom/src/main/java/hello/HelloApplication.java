@@ -1,5 +1,6 @@
 package hello;
 
+import cloud.piranha.http.virtual.VirtualHttpServer;
 import cloud.piranha.spring.starter.embedded.EmbeddedPiranhaServletWebServerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
