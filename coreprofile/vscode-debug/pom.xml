@@ -9,10 +9,15 @@
     <artifactId>vscode-debug</artifactId>
     <version>1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Debugging a REST service with VSCode</name>
+    <name>Piranha Core Profile - Debugging a REST service with VSCode</name>
     <properties>
         <jakartaee.version>10.0.0</jakartaee.version>
+        <java.version>17</java.version>
         <junit.version>5.10.0-M1</junit.version>
+        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+        <maven-failsafe-plugin.version>3.0.0</maven-failsafe-plugin.version>
+        <maven-war-plugin.version>3.3.2</maven-war-plugin.version>
+        <piranha.version>23.5.0</piranha.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
@@ -47,7 +52,7 @@
             <plugin>
                 <groupId>cloud.piranha.maven.plugins</groupId>
                 <artifactId>piranha-maven-plugin</artifactId>
-                <version>23.1.0</version>
+                <version>${piranha.version}</version>
                 <executions>
                     <execution>
                         <id>pre-integration-test</id>
@@ -68,15 +73,15 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <release>17</release>
+                    <release>${java.version}</release>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0-M7</version>
+                <version>${maven-failsafe-plugin.version}</version>
                 <executions>
                     <execution>
                         <goals>
@@ -89,7 +94,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.2</version>
+                <version>${maven-war-plugin.version}</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
@@ -104,7 +109,7 @@
                     <plugin>
                         <groupId>cloud.piranha.maven.plugins</groupId>
                         <artifactId>piranha-maven-plugin</artifactId>
-                        <version>23.1.0</version>
+                        <version>${piranha.version}</version>
                         <configuration>
                             <jvmArguments>-Xdebug -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=9009</jvmArguments>
                         </configuration>
