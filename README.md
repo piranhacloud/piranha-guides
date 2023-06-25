@@ -13,6 +13,8 @@
 1. [Create a Hello World web application](https://piranha.cloud/embedded/guides/helloworld)
 1. [Create an Piranha Embedded JLink application](https://piranha.cloud/embedded/guides/jlink)
 1. [Running Piranha Embedded with Spring Boot](https://piranha.cloud/embedded/guides/springboot)
+1. [Running Piranha Embedded with Spring Boot and Project Loom](https://piranha.cloud/embedded/guides/springboot-loom)
+1. [Create a Piranha Embedded GraalVM application](https://piranha.cloud/embedded/guides/graalvm)
 
 ## Piranha Server
 
