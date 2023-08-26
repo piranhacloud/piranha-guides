@@ -9,17 +9,20 @@
     <artifactId>arquillian</artifactId>
     <version>1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Piranha Core Profile - Testing with JUnit 5 and Arquillian</name>
+    <name>Testing with JUnit 5 and Arquillian</name>
     <properties>
-        <arquillian.version>1.7.0.Final</arquillian.version>
+        <!-- dependencies -->
+        <arquillian.version>1.7.1.Final</arquillian.version>
         <jakartaee.version>10.0.0</jakartaee.version>
+        <junit.version>5.10.0</junit.version>
+        <!-- other -->
         <java.version>17</java.version>
-        <junit.version>5.10.0-M1</junit.version>
-        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
-        <maven-failsafe-plugin.version>3.0.0</maven-failsafe-plugin.version>
-        <maven-war-plugin.version>3.3.2</maven-war-plugin.version>
-        <piranha.version>23.6.0</piranha.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- plugins -->
+        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+        <maven-failsafe-plugin.version>3.1.2</maven-failsafe-plugin.version>
+        <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
+        <piranha.version>23.8.0</piranha.version>
     </properties>
     <dependencies>
         <dependency>
