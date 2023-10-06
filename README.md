@@ -16,6 +16,10 @@
 1. [Running Piranha Embedded with Spring Boot and Project Loom](https://piranha.cloud/embedded/guides/springboot-loom)
 1. [Create a Piranha Embedded GraalVM application](https://piranha.cloud/embedded/guides/graalvm)
 
+## Piranha Micro
+
+1. [Create a Hello World web application](https://piranha.cloud/micro/guides/helloworld)
+
 ## Piranha Server
 
 1. [Create a Hello World web application](https://piranha.cloud/server/guides/helloworld)
