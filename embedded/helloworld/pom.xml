@@ -12,7 +12,7 @@
     <name>Piranha Embedded - Create a Hello World web application</name>
     <properties>
         <exec-maven-plugin.version>3.1.0</exec-maven-plugin.version>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
         <piranha.version>23.6.0</piranha.version>
