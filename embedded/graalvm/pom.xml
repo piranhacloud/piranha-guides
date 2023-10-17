@@ -11,12 +11,16 @@
     <packaging>jar</packaging>
     <name>Piranha Embedded - Create a GraalVM application</name>
     <properties>
-        <exec-maven-plugin.version>3.1.0</exec-maven-plugin.version>
+        <!-- dependencies -->
+        <piranha.version>23.10.0</piranha.version>
+        <!-- other -->
         <java.version>21</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- plugins -->
+        <exec-maven-plugin.version>3.1.0</exec-maven-plugin.version>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
-        <piranha.version>23.6.0</piranha.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <native-maven-plugin.version>0.9.27</native-maven-plugin.version>
     </properties>
     <build>
         <finalName>helloworld</finalName>
@@ -73,29 +77,34 @@
     </dependencies>
     <profiles>
         <profile>
-            <id>graalvm</id>
+            <id>native</id>
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.graalvm.nativeimage</groupId>
-                        <artifactId>native-image-maven-plugin</artifactId>
-                        <version>21.2.0</version>
+                        <groupId>org.graalvm.buildtools</groupId>
+                        <artifactId>native-maven-plugin</artifactId>
+                        <version>${native-maven-plugin.version}</version>
+                        <extensions>true</extensions>
                         <executions>
                             <execution>
+                                <id>build-native</id>
                                 <goals>
-                                    <goal>native-image</goal>
+                                    <goal>build</goal>
                                 </goals>
                                 <phase>package</phase>
                             </execution>
                         </executions>
                         <configuration>
-                            <skip>false</skip>
+                            <buildArgs>
+                                <buildArg>-H:Log=registerResource:5 -H:IncludeResourceBundles=jakarta.servlet.LocalStrings -H:IncludeResourceBundles=jakarta.servlet.http.LocalStrings --no-fallback --install-exit-handlers</buildArg>
+                            </buildArgs>
+                            <fallback>false</fallback>
                             <imageName>helloworld</imageName>
-                            <buildArgs>-H:Log=registerResource:5 -H:IncludeResourceBundles=jakarta.servlet.LocalStrings -H:IncludeResourceBundles=jakarta.servlet.http.LocalStrings --no-fallback --install-exit-handlers</buildArgs>
+                            <verbose>true</verbose>
                         </configuration>
-                    </plugin>                    
+                    </plugin>
                 </plugins>
             </build>
         </profile>
-    </profiles>
+    </profiles>    
 </project>

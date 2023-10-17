@@ -1,22 +1,25 @@
 #
 # Run the build through GraalVM
 #
-FROM ghcr.io/graalvm/graalvm-ce:22 AS builder
-RUN cd /usr/local && \
-    curl -O https://archive.apache.org/dist/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz && \
-    tar xfvz apache-maven-3.8.4-bin.tar.gz && \
-    rm apache-maven-3.8.4-bin.tar.gz && \
-    gu install native-image
+FROM ghcr.io/graalvm/graalvm-community:21-ol8 AS builder
+RUN microdnf update -y
+RUN microdnf install gzip tar wget -y
+RUN wget https://downloads.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz -P /tmp
+RUN tar xf /tmp/apache-maven-3.8.8-bin.tar.gz -C /opt
+RUN ln -s /opt/apache-maven-3.8.8 /opt/maven
+RUN ln -s /opt/graalvm-community-java21 /opt/graalvm
 COPY . /root
-RUN export PATH=$PATH:/usr/local/apache-maven-3.8.4/bin && \
+RUN export JAVA_HOME=/opt/graalvm && \
+    export GRAALVM_HOME=/opt/graalvm && \
+    export PATH=$PATH:/opt/maven/bin && \
     cd /root && \
     export MAVEN_OPTS=-Xmx4G && \
-    mvn --no-transfer-progress -P graalvm clean install
-
+    mvn --no-transfer-progress -DskipTests -P native clean install
+ 
 #
 # Create an image with the GraalVM helloworld binary
 #
-FROM scratch
+FROM debian:stable-slim
 COPY --from=builder /root/target/helloworld /helloworld
 EXPOSE 8080
 ENTRYPOINT ["/helloworld"]
