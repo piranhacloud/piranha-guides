@@ -10,6 +10,7 @@
     <modules>
         <module>faces</module>
         <module>helloworld</module>
+        <module>pages</module>
         <module>playwright</module>
         <module>rest</module>
     </modules>
