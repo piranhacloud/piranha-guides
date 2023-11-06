@@ -38,3 +38,4 @@
 1. [Create a Hello World web application](https://piranha.cloud/web-profile/guides/helloworld)
 1. [Create a Jakarta REST service](https://piranha.cloud/web-profile/guides/rest)
 1. [Testing with JUnit 5 and Playwright](https://piranha.cloud/web-profile/guides/playwright/)
+1. [Create a Jakarta Pages web application](https://piranha.cloud/web-profile/guides/pages)
