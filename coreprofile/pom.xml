@@ -1,17 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>cloud.piranha.guides.coreprofile</groupId>
-    <artifactId>project</artifactId>
-    <version>1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>Piranha Guides - CoreProfile - Project</name>
-    <modules>
-        <module>arquillian</module>
-        <module>json</module>
-        <module>netbeans-debug</module>
-        <module>rest</module>
-        <module>vscode-debug</module>
-    </modules>
+      
+  <modelVersion>4.0.0</modelVersion>
+      
+  <groupId>cloud.piranha.guides.coreprofile</groupId>
+      
+  <artifactId>project</artifactId>
+      
+  <version>1-SNAPSHOT</version>
+      
+  <packaging>pom</packaging>
+      
+  <name>Piranha Guides - CoreProfile - Project</name>
+      
+  <modules>
+            
+    <module>arquillian</module>
+            
+    <module>json</module>
+            
+    <module>netbeans-debug</module>
+            
+    <module>rest</module>
+            
+    <module>vscode-debug</module>
+          
+    <module>crac</module>
+      
+  </modules>
+  
 </project>
