@@ -7,6 +7,7 @@
 1. [Debugging a REST service with NetBeans](https://piranha.cloud/core-profile/guides/netbeans-debug)
 1. [Debugging a REST service with VSCode](https://piranha.cloud/core-profile/guides/vscode-debug)
 1. [Testing with JUnit 5 and Arquillian](https://piranha.cloud/core-profile/guides/arquillian)
+1. [Piranha Core Profile on Project CRaC](https://piranha.cloud/core-profile/guides/crac)
 
 ## Piranha Embedded
 
