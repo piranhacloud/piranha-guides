@@ -1,5 +1,11 @@
 # Piranha Guides
 
+Each of the links below point to a guide on [piranha.cloud](https://piranha.cloud).
+
+Note that the source material for each guide comes from this GitHub repository
+and you should see a Maven module for each guide that is published on our
+website.
+
 ## Piranha Core Profile
 
 1. [Create a JSON REST service](https://piranha.cloud/core-profile/guides/json)
