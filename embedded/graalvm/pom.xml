@@ -12,7 +12,7 @@
     <name>Piranha Embedded - Create a GraalVM application</name>
     <properties>
         <!-- dependencies -->
-        <piranha.version>23.10.0</piranha.version>
+        <piranha.version>23.11.0</piranha.version>
         <!-- other -->
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
