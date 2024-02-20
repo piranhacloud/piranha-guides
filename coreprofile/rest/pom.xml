@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cloud.piranha.guides.coreprofile</groupId>
     <artifactId>rest</artifactId>
-    <version>1-SNAPSHOT</version>
+    <version>24.3.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>Create a REST service</name>
     <properties>

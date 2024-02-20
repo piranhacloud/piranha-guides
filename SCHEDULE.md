@@ -25,3 +25,4 @@
 | | Create a Jakarta REST service | Week 21 |
 | | Testing with JUnit 5 and Playwright | Week 22 |
 | | Create a Jakarta Pages web application]| Week 23 |
+| | Testing with our container image | Week 24 |
