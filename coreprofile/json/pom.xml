@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cloud.piranha.guides.coreprofile</groupId>
     <artifactId>json</artifactId>
-    <version>1-SNAPSHOT</version>
+    <version>24.3.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>Create a JSON service</name>
     <properties>
