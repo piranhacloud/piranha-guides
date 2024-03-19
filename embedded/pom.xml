@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cloud.piranha.guides.embedded</groupId>
     <artifactId>project</artifactId>
-    <version>24.3.0-SNAPSHOT</version>
+    <version>24.4.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Piranha Guides - Embedded - Project</name>
     <modules>
