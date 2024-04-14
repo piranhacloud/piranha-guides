@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cloud.piranha.guides.servlet</groupId>
     <artifactId>project</artifactId>
-    <version>24.4.0-SNAPSHOT</version>
+    <version>24.5.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Piranha Guides - Servlet - Project</name>
     <modules>
