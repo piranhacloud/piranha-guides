@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 public class HelloIT {
 
     @Test
-    public void testHelloFacesXhtml() throws Exception {
+    public void testHelloPagesJsp() throws Exception {
         HttpClient client = HttpClient
                 .newBuilder()
                 .connectTimeout(Duration.ofSeconds(60))
