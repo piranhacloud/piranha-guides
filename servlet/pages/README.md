@@ -1,6 +1,6 @@
 
-# Piranha Servlet HelloPages application
+# Create a Jakarta Pages application on Piranha Servlet
 
-See [Create a Jakarta Pages application](https://piranha.cloud/servlet/guides/pages) 
+See [Create a Jakarta Pages application on Piranha Servlet](https://piranha.cloud/servlet/guides/pages) 
 for the step by step guide. This repository contains the resulting project for
 your reference.
