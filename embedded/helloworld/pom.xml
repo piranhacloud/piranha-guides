@@ -11,12 +11,15 @@
     <packaging>jar</packaging>
     <name>Piranha Embedded - Create a Hello World web application</name>
     <properties>
-        <exec-maven-plugin.version>3.1.0</exec-maven-plugin.version>
+        <!-- dependencies -->
+        <piranha.version>24.8.0</piranha.version>
+        <!-- other -->
         <java.version>21</java.version>
-        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
-        <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
-        <piranha.version>23.9.0</piranha.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- plugins -->
+        <exec-maven-plugin.version>3.4.1</exec-maven-plugin.version>
+        <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
+        <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
     </properties>
     <build>
         <plugins>
