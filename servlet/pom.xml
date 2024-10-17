@@ -9,7 +9,5 @@
     <name>Piranha Servlet guides</name>
     <modules>
         <module>crac</module>
-        <module>faces</module>
-        <module>websocket</module>
     </modules>
 </project>
