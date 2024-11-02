@@ -17,8 +17,6 @@
             
     <module>arquillian</module>
             
-    <module>json</module>
-            
     <module>netbeans-debug</module>
             
     <module>rest</module>
