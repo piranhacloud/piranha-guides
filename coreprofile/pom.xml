@@ -19,7 +19,6 @@
             
     <module>netbeans-debug</module>
             
-    <module>rest</module>
             
     <module>vscode-debug</module>
           
