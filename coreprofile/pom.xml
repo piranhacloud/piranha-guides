@@ -17,7 +17,6 @@
             
     <module>arquillian</module>
             
-            
     <module>vscode-debug</module>
           
     <module>crac</module>
