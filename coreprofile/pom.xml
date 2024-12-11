@@ -17,9 +17,6 @@
             
     <module>arquillian</module>
             
-    <module>netbeans-debug</module>
-            
-            
     <module>vscode-debug</module>
           
     <module>crac</module>
