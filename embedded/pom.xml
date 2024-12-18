@@ -11,6 +11,5 @@
         <module>graalvm</module>
         <module>helloworld</module>
         <module>springboot</module>
-        <module>springboot-loom</module>
     </modules>
 </project>
