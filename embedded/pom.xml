@@ -8,7 +8,6 @@
     <packaging>pom</packaging>
     <name>Piranha Guides - Embedded - Project</name>
     <modules>
-        <module>graalvm</module>
         <module>helloworld</module>
         <module>springboot</module>
     </modules>
