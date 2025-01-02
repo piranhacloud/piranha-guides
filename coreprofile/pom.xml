@@ -14,8 +14,6 @@
   <name>Piranha Guides - CoreProfile - Project</name>
       
   <modules>
-            
-    <module>arquillian</module>
           
     <module>crac</module>
       
