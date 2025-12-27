@@ -1,6 +1,6 @@
 # Piranha Guides
 
-This repository has been depecrated. It will be removed March 1, 2026.
+_This repository is no longer being maintained now that all contributions flow through Eclipse_
 
 See the [Piranha website](https://piranha.cloud/release/) for the new location of the guides.
 
